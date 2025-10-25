@@ -1,7 +1,0 @@
-{
-  "name": "AML2",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
