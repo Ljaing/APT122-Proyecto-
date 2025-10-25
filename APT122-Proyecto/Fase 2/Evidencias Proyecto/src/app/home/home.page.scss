@@ -1,0 +1,57 @@
+.home-bg { --background: #f5e8f9; }
+
+.brand {
+  text-align: center;
+  margin-top: 24px;
+
+  .logo {
+    width: 72px;
+    height: auto;
+    display: block;
+    margin: 0 auto 6px;
+  }
+
+  h2 {
+    margin: 0;
+    color: #2f2f30;
+    font-weight: 800;
+  }
+}
+
+.welcome {
+  text-align: center;
+  margin: 16px 0 20px;
+  color: #2f2f30;
+
+  .danger { color: #c62828; }
+  .warn   { color: #d84315; }
+}
+
+.menu {
+  display: grid;
+  gap: 12px;
+}
+
+.pill {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  text-align: left;
+
+  ion-icon { font-size: 22px; }
+}
+
+.pill--red    { background: #e53935; }
+.pill--yellow { background: #f2c029; color: #2f2f30; }
+.pill--blue   { background: #3b76c5; }
+.pill--pink   { background: #f093c1; color: #2f2f30; }
+.pill--green  { background: #4caf50; }
+.pill--brown  { background: #795548; }

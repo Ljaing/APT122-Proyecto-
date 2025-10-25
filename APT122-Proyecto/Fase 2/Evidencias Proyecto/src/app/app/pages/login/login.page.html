@@ -1,0 +1,36 @@
+<ion-content class="login-bg">
+  <!-- Placer controla el espacio superior -->
+  <div class="login-placer">
+    <div class="login-container">
+      <img src="assets/imgs/logoAML.png" alt="App AML" class="login-logo" />
+      <h1 class="login-title">App AML</h1>
+
+      <ion-list class="login-card">
+        <ion-item lines="none">
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input
+            placeholder="Juan Perez"
+            [(ngModel)]="nombre"
+            name="nombre">
+          </ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="stacked">Contraseña</ion-label>
+          <ion-input
+            type="password"
+            placeholder="•••••••"
+            [(ngModel)]="password"
+            name="password">
+          </ion-input>
+        </ion-item>
+
+        <ion-button expand="block" class="btn-primary" (click)="ingresar()" [disabled]="loading()">
+          {{ loading() ? 'Ingresando…' : 'Iniciar sesión' }}
+        </ion-button>
+
+        <p class="link" (click)="recuperar()">¿Olvidaste tu contraseña?</p>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
